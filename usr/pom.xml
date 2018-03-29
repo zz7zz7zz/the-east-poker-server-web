@@ -7,13 +7,90 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>usr Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+   <!-- 定义maven变量 -->
+    <properties>
+        <!-- spring -->
+        <org.springframework.version>5.0.0.RELEASE</org.springframework.version>
+    </properties>
+    
   <dependencies>
+    
+    <!-- 1.Java语言的单元测试框架 -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- 2.spring-->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+		
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-tx</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+		
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+		
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>${org.springframework.version}</version>
+	</dependency>
+        
+    <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-expression</artifactId>
+           <version>${org.springframework.version}</version>
+    </dependency>
+        
+     <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-beans</artifactId>
+         <version>${org.springframework.version}</version>
+     </dependency>
+        
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aspects</artifactId>
+         <version>${org.springframework.version}</version>
+	</dependency>
+        
+     <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-jdbc</artifactId>
+         <version>${org.springframework.version}</version>
+     </dependency>
+        
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>${org.springframework.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${org.springframework.version}</version>
+	</dependency>
+
   </dependencies>
   <build>
     <finalName>usr</finalName>
