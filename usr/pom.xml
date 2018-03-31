@@ -12,6 +12,13 @@
     <properties>
         <!-- spring -->
         <org.springframework.version>5.0.0.RELEASE</org.springframework.version>
+        
+        <!-- mybatis -->
+        <org.mybatis.mybatis-spring.version>1.2.4</org.mybatis.mybatis-spring.version>
+        <org.mybatis.version>3.3.1</org.mybatis.version>
+        
+        <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
+                
     </properties>
     
   <dependencies>
@@ -91,6 +98,27 @@
 	    <version>${org.springframework.version}</version>
 	</dependency>
 
+    <!-- 3.mybatis-->
+    <!-- 3.1 mybatis+Spring 整合-->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis-spring</artifactId>
+		<version>${org.mybatis.mybatis-spring.version}</version>
+	</dependency>
+    
+    <!-- 3.2 mybatis依赖包-->
+   	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>${org.mybatis.version}</version>
+	</dependency>
+		
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>${mysql-connector-java.version}</version>
+	</dependency>
+	
   </dependencies>
   <build>
     <finalName>usr</finalName>

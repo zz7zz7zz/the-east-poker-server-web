@@ -1,0 +1,4 @@
+jdbc.driverClassName=org.apache.commons.dbcp.BasicDataSource
+jdbc.url=jdbc:mysql://123.57.12.136:3306/weiwei?useUnicode=true&amp;characterEncoding=UTF8
+jdbc.username=root
+jdbc.password=NFHNT2Xh7PuW2qhv
