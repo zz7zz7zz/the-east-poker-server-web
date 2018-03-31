@@ -1,4 +1,4 @@
-package com.poker.entity;
+package com.poker.user.entity;
 
 public class User {
 	

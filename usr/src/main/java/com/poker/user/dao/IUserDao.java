@@ -1,6 +1,6 @@
 package com.poker.user.dao;
 
-import com.poker.entity.User;
+import com.poker.user.entity.User;
 
 public interface IUserDao {
 	

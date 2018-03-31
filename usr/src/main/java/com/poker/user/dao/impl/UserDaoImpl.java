@@ -2,8 +2,8 @@ package com.poker.user.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
-import com.poker.entity.User;
 import com.poker.user.dao.IUserDao;
+import com.poker.user.entity.User;
 
 @Repository
 public class UserDaoImpl implements IUserDao{
