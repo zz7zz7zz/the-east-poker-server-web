@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.poker.user.login.ILoginService;
+import com.poker.user.service.IUserService;
 
 @Controller
 @RequestMapping("/user")
@@ -13,7 +13,7 @@ import com.poker.user.login.ILoginService;
 public class UserController {
 
 	@Autowired
-	ILoginService mLoginServer;
+	IUserService mLoginServer;
 	
 	@RequestMapping(value="/login")
 	@ResponseBody
