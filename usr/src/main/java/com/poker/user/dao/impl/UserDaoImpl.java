@@ -21,7 +21,7 @@ public class UserDaoImpl implements IUserDao{
 	}
 
 	@Override
-	public User getUserUid(String uid) {
+	public User getUserUid(long uid) {
 		// TODO Auto-generated method stub
 		return null;
 	}

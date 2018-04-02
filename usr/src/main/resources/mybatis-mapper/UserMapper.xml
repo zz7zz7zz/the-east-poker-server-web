@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.poker.user.dao.IUserDao">
+	<resultMap id="User" type="com.poker.user.entity.User">
+		<id property="uid" 			column="uid"/>
+		<result property="uuid" 	column="uuid"/>
+		<result property="password" column="password"/>
+		<result property="name" 	column="name"/>
+		<result property="portrait" column="portrait"/>
+		<result property="regTime" 	column="regTime"/>
+	</resultMap>
+	
+	<insert id="addUser" parameterType="com.poker.user.entity.User">
+		insert into user0 (uid,uuid,password,name,portrait) values (#{uid},#{uuid},#{password},#{name},#{portrait})
+	</insert>
+	
+	<select id="getUserByUuid" resultMap="User">
+		select * from user0 where uuid=#{uuid}
+	</select>
+	
+	<select id="getUserUid" resultMap="User">
+		select * from user0 where uid=#{uid}
+	</select>
+	
+</mapper>

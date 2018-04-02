@@ -1,4 +1,25 @@
-jdbc.driverClassName=org.apache.commons.dbcp.BasicDataSource
-jdbc.url=jdbc:mysql://123.57.12.136:3306/weiwei?useUnicode=true&amp;characterEncoding=UTF8
-jdbc.username=root
-jdbc.password=NFHNT2Xh7PuW2qhv
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	 <!--加载配置文件->jdbc.properties 数据库文件-->
+	<properties resource="db_config.properties"></properties>
+    
+    <environments default="mybatis-user">
+    	<environment id="mybatis-user">
+    		<transactionManager  type="JDBC"></transactionManager>
+    		<dataSource type="POOLED">
+    			<property name="driver" value="${jdbc.driver}"/><!--${}用于读取上面jdbc.properties配置文件-->
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/><!--以上是通过反射原理注入-->
+    		</dataSource>
+    	</environment>
+    </environments>
+    
+    <!--声明配置的mapper映射位置 -->
+    <mappers>
+        <mapper resource="mybatis-mapper/UserMapper.xml"/>
+    </mappers>
+    
+</configuration>

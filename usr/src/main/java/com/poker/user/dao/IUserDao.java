@@ -8,6 +8,6 @@ public interface IUserDao {
 	
 	User getUserByUuid(String uuid);
 	
-	User getUserUid(String uid);
+	User getUserUid(long uid);
 	
 }

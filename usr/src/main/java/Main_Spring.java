@@ -3,7 +3,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.poker.user.service.IUserService;
 
-public class Main {
+public class Main_Spring {
 	
 	public static void main(String argc[]){
 		ApplicationContext mContext = new ClassPathXmlApplicationContext("applicationContext.xml");

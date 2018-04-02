@@ -12,7 +12,7 @@ public class User {
 	
 	public String   portrait;//用户头像
 	
-	public String   regTime;//用户注册时间
+	public long   regTime;//用户注册时间
 
 	public long getUid() {
 		return uid;
@@ -54,12 +54,18 @@ public class User {
 		this.portrait = portrait;
 	}
 
-	public String getRegTime() {
+	public long getRegTime() {
 		return regTime;
 	}
 
-	public void setRegTime(String regTime) {
+	public void setRegTime(long regTime) {
 		this.regTime = regTime;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "User [uid=" + uid + ", uuid=" + uuid + ", password=" + password + ", name=" + name + ", portrait="
+				+ portrait + ", regTime=" + regTime + "]";
+	}
+
 }
