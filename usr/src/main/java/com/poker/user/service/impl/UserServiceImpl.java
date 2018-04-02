@@ -14,7 +14,7 @@ public class UserServiceImpl implements IUserService{
 	
 	@Override
 	public String login() {
-		return "{\"code\":\"200\",\"msg\":\"success\",\"data\":\"LoginServiceImpl\"}";
+		return "{\"code\":\"200\",\"msg\":\"success\",\"data\":\""+(mUserDao.getUserUid(10000))+"\"}";
 	}
 
 }

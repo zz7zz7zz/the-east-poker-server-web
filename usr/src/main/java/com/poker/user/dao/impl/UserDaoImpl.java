@@ -16,14 +16,18 @@ public class UserDaoImpl implements IUserDao{
 
 	@Override
 	public User getUserByUuid(String uuid) {
-		// TODO Auto-generated method stub
-		return null;
+		User mUser = new User();
+		mUser.setUuid(uuid);
+		mUser.setName("UserDaoImpl getUserByUuid");
+		return mUser;
 	}
 
 	@Override
 	public User getUserUid(long uid) {
-		// TODO Auto-generated method stub
-		return null;
+		User mUser = new User();
+		mUser.setUid(uid);
+		mUser.setName("UserDaoImpl getUserUid");
+		return mUser;
 	}
 
 }
