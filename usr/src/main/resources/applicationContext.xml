@@ -15,5 +15,12 @@
       	http://www.springframework.org/schema/mvc
     	http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd"> 	
 
+	<!-- 激活annotation功能 -->
+	<context:annotation-config />
+	
+	<!-- 扫描指定package下所有带有如@controller,@services,@resource,并把所注释的注册为Spring Beans -->
+	<context:component-scan base-package="com.poker.user" />
+	
+	<import resource="mybatis.xml" />
 	
 </beans> 
