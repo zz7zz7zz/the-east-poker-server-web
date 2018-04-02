@@ -114,6 +114,7 @@
 		<version>${org.mybatis.version}</version>
 	</dependency>
 		
+	<!-- 4 mysql驱动包 -->  
 	<dependency>
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
