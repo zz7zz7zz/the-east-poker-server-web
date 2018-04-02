@@ -15,11 +15,11 @@
 		insert into user0 (uid,uuid,password,name,portrait) values (#{uid},#{uuid},#{password},#{name},#{portrait})
 	</insert>
 	
-	<select id="getUserByUuid" resultMap="User">
+	<select id="getUserByUuid" parameterType="java.lang.String" resultMap="User">
 		select * from user0 where uuid=#{uuid}
 	</select>
 	
-	<select id="getUserUid" resultMap="User">
+	<select id="getUserUid" parameterType="long" resultMap="User">
 		select * from user0 where uid=#{uid}
 	</select>
 	
