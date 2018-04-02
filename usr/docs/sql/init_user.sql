@@ -1,4 +1,5 @@
 use entertainment;
+use qaa;
 create table if not exists user(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	identity  VARCHAR(32),
