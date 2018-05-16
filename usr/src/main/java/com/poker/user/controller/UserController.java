@@ -23,4 +23,4 @@ public class UserController {
 	
 }
 
-//ËµÃ÷ 1: Controller ÖĞ ×¢½âÉèÖÃ@ResponseBody Ôò·µ»ØÊı¾İ£»·ñÔò·µ»ØÍøÒ³µØÖ·
+//è¯´æ˜ 1: Controller ä¸­ æ³¨è§£è®¾ç½®@ResponseBody åˆ™è¿”å›æ•°æ®ï¼›å¦åˆ™è¿”å›ç½‘é¡µåœ°å€

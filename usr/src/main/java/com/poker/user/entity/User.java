@@ -2,17 +2,17 @@ package com.poker.user.entity;
 
 public class User {
 	
-	public long 	uid;//用户唯一id
+	public long 	uid;//鐢ㄦ埛鍞竴id
 	
-	public String   uuid;//用户随机生成的uuid
+	public String   uuid;//鐢ㄦ埛闅忔満鐢熸垚鐨剈uid
 
-	public String   password;//用户密码
+	public String   password;//鐢ㄦ埛瀵嗙爜
 	
-	public String 	name;//用户昵称
+	public String 	name;//鐢ㄦ埛鏄电О
 	
-	public String   portrait;//用户头像
+	public String   portrait;//鐢ㄦ埛澶村儚
 	
-	public long   regTime;//用户注册时间
+	public long   regTime;//鐢ㄦ埛娉ㄥ唽鏃堕棿
 
 	public long getUid() {
 		return uid;

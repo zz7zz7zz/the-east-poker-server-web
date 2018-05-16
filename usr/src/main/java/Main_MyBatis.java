@@ -10,13 +10,13 @@ import com.poker.user.entity.User;
 public class Main_MyBatis {
 	
 	public static void main(String argc[]){
-		//io¼ÓÔØÅäÖÃÎÄ¼ş
+		//ioåŠ è½½é…ç½®æ–‡ä»¶
         InputStream in = Main_MyBatis.class.getResourceAsStream("mybatis_config.xml");
 
-       //ÓÃ¹¹½¨Æ÷¹¹½¨Ò»¸öinputstream
+       //ç”¨æ„å»ºå™¨æ„å»ºä¸€ä¸ªinputstream
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(in);
         
-      //È¡µÃmapper¶ÔÏó µ÷ÓÃmapper·½·¨
+      //å–å¾—mapperå¯¹è±¡ è°ƒç”¨mapperæ–¹æ³•
         SqlSession session=factory.openSession();
         IUserDao mUserDao = session.getMapper(IUserDao.class);
         
@@ -28,20 +28,20 @@ public class Main_MyBatis {
         user.setPortrait("portrait"+user.getUid());
         user.setRegTime(System.currentTimeMillis());
         
-        // ²âÊÔ½Ó¿Ú1
+        // æµ‹è¯•æ¥å£1
 //        mUserDao.addUser(user);
         
-        // ²âÊÔ½Ó¿Ú2
+        // æµ‹è¯•æ¥å£2
         User q_user = mUserDao.getUserByUuid("uuid10000");
         System.out.println(q_user);
         
-        // ²âÊÔ½Ó¿Ú3
+        // æµ‹è¯•æ¥å£3
         User q_user_2 = mUserDao.getUserUid(10001);
         System.out.println(q_user_2);
         
-       //¼ÇµÃÌá½» ²»Ìá½»µÈÓÚÉ¶¶¼Ã»¸É
+       //è®°å¾—æäº¤ ä¸æäº¤ç­‰äºå•¥éƒ½æ²¡å¹²
         session.commit();
-        //¹Ø±Õ×ÊÔ´
+        //å…³é—­èµ„æº
         session.close();
 	}
 }
